@@ -43,7 +43,15 @@
       opacity: 1;
    }
 }
-
+/****animation effet de rotation****/
+@keyframes rotating{
+   0%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(360deg);
+   }
+}
 /*** classes pour animations fade in***/
 .banner{
    img{
@@ -62,3 +70,17 @@
 p {
    animation: fade-in-inverse-paragraphe 1000ms 150ms;
 }
+
+/****classes avec effet de rotation***/
+.story {
+   ::after{
+      animation: rotating 10s linear infinite;
+   }
+}
+
+#studio-title::after,#studio-title::before, footer::after, footer::before, footer ul::after{
+      animation: rotating 10s linear infinite;
+}
+
+
+
