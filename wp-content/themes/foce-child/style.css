@@ -52,6 +52,15 @@
     transform: rotate(360deg);
   }
 }
+/****animations apparition titres****/
+@keyframes title-fade-in {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /*** classes pour animations fade in***/
 .banner img {
   animation: fade-in 1000ms 150ms;
@@ -76,4 +85,9 @@ p {
 
 #studio-title::after, #studio-title::before, footer::after, footer::before, footer ul::after {
   animation: rotating 10s linear infinite;
+}
+
+/****classes animations titres****/
+.title-animated {
+  animation: title-fade-in 1000ms 150ms;
 }
