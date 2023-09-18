@@ -1,0 +1,15 @@
+.site-footer{
+    flex-direction: column;
+    img{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 300px;
+        margin-top: -160px;
+    }      
+}
+
+.site-footer{
+    &::after{
+        bottom: 70%;
+    }
+}

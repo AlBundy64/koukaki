@@ -91,3 +91,18 @@ p {
 .title-animated {
   animation: title-fade-in 1000ms 150ms;
 }
+
+/****importe le fichier scss concernant la section finale****/
+.site-footer {
+  flex-direction: column;
+}
+.site-footer img {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 300px;
+  margin-top: -160px;
+}
+
+.site-footer::after {
+  bottom: 70%;
+}

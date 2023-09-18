@@ -95,5 +95,6 @@ p {
    animation: title-fade-in 1000ms 150ms;
 }
 
-
+/****importe le fichier scss concernant la section finale****/
+@import "../templates-parts/section-festival/section-festival-style.scss";
 
