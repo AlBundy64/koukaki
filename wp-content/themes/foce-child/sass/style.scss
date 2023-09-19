@@ -72,7 +72,7 @@
    animation: fade-in-inverse 1000ms 150ms ;
 }
 
-.story, #studio{
+.story, #studio, #colophon{
       animation: fade-in 1000ms 150ms;
    }
 
@@ -97,4 +97,25 @@ p {
 
 /****importe le fichier scss concernant la section finale****/
 @import "../templates-parts/section-festival/section-festival-style.scss";
+
+/****vidéo dans le header****/
+.banner {
+   @media (min-width: 699px) {
+      background-image: none;
+  }
+   
+   #banner-video{
+      min-height: 806px;
+      z-index: -1;
+      position:absolute;
+      @media (max-width: 699px) {
+         display: none;
+     }
+    }
+    #banner-video[poster]{
+      max-width: 1440px;
+    }
+ }
+
+ 
 

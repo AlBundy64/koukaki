@@ -70,7 +70,7 @@
   animation: fade-in-inverse 1000ms 150ms;
 }
 
-.story, #studio {
+.story, #studio, #colophon {
   animation: fade-in 1000ms 150ms;
 }
 
@@ -105,4 +105,24 @@ p {
 
 .site-footer::after {
   bottom: 70%;
+}
+
+/****vidéo dans le header****/
+@media (min-width: 699px) {
+  .banner {
+    background-image: none;
+  }
+}
+.banner #banner-video {
+  min-height: 806px;
+  z-index: -1;
+  position: absolute;
+}
+@media (max-width: 699px) {
+  .banner #banner-video {
+    display: none;
+  }
+}
+.banner #banner-video[poster] {
+  max-width: 1440px;
 }
