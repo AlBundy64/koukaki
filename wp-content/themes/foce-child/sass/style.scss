@@ -8,6 +8,7 @@
  Version: 0.1
  */
 
+/****Animations******/
 /******** Fade in animation********/
 /*** animation du bas vers le haut***/
 @keyframes fade-in{
@@ -61,10 +62,34 @@
       transform: translateY(0);
    }
 }
+/****Animation flottement titre****/
+@keyframes floating{
+   0% {
+      transform: translateY(0px);
+   }
+   30%{
+      transform: translate(-10px,-30px);
+   }
+   50%{
+      transform: translate(10px,15px);
+   }
+   70%{
+      transform: translate(40px,-40px);
+   }
+   100% {
+      transform: translateY(0px);
+   }
+}
+
+
+/**** classes éléments animés****/
 /*** classes pour animations fade in***/
+
 .banner{
    img{
-      animation: fade-in 1000ms 150ms;
+      animation: fade-in 1000ms 150ms, floating 10s 1150ms ease-in-out infinite;
+      top: 25%;
+      position: sticky;
    }
 }
 
@@ -95,6 +120,7 @@ p {
    animation: title-fade-in 1000ms 150ms;
 }
 
+
 /****importe le fichier scss concernant la section finale****/
 @import "../templates-parts/section-festival/section-festival-style.scss";
 
@@ -103,11 +129,13 @@ p {
    @media (min-width: 699px) {
       background-image: none;
   }
-   
+   aspect-ratio: 1440/806;
+   width: 100%;
+   min-height: 100px;
    #banner-video{
-      min-height: 806px;
-      z-index: -1;
+      width: 100%;
       position:absolute;
+      z-index: -1;
       @media (max-width: 699px) {
          display: none;
      }
@@ -117,5 +145,4 @@ p {
     }
  }
 
- 
 

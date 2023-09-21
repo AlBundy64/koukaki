@@ -8,6 +8,7 @@
  Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
  Version: 0.1
  */
+/****Animations******/
 /******** Fade in animation********/
 /*** animation du bas vers le haut***/
 @keyframes fade-in {
@@ -61,9 +62,30 @@
     transform: translateY(0);
   }
 }
+/****Animation flottement titre****/
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translate(-10px, -30px);
+  }
+  50% {
+    transform: translate(10px, 15px);
+  }
+  70% {
+    transform: translate(40px, -40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/**** classes éléments animés****/
 /*** classes pour animations fade in***/
 .banner img {
-  animation: fade-in 1000ms 150ms;
+  animation: fade-in 1000ms 150ms, floating 10s 1150ms ease-in-out infinite;
+  top: 25%;
+  position: sticky;
 }
 
 .banner {
@@ -108,15 +130,20 @@ p {
 }
 
 /****vidéo dans le header****/
+.banner {
+  aspect-ratio: 1440/806;
+  width: 100%;
+  min-height: 100px;
+}
 @media (min-width: 699px) {
   .banner {
     background-image: none;
   }
 }
 .banner #banner-video {
-  min-height: 806px;
-  z-index: -1;
+  width: 100%;
   position: absolute;
+  z-index: -1;
 }
 @media (max-width: 699px) {
   .banner #banner-video {
