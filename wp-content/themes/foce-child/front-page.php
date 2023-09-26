@@ -32,14 +32,13 @@ get_header();
                     <?php get_template_part('templates-parts/section-carrousel/carrousel')?>
                     
                 </div>
-                <div class="other-characters">
-                    
-                </div>
             </article>
             <article id="place">
                 <div>
                     <h3>Le Lieu</h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
+                    <img src="<?php echo  get_stylesheet_directory_uri() . '/assets/images/big_cloud.png';?>" alt="Image d'un grand nuage" data-200-bottom-top="transform:translate3d(800px, -200px, 0)" data-top-bottom="transform:translate3d(1100px,-200px, 0)">
+                    <img src="<?php echo  get_stylesheet_directory_uri() . '/assets/images/little_cloud.png';?>" alt="Image d'un petit nuage" data-50-bottom-top="transform:translate3d(500px, -50px, 0)" data-top-bottom="transform:translate3d(800px,-50px, 0)">
                 </div>
 
             </article>

@@ -181,3 +181,11 @@ p {
 .banner #banner-video[poster] {
   max-width: 1440px;
 }
+
+/****section lieu****/
+.story #place {
+  background-image: url("./assets/images/place.png");
+}
+.story #place img {
+  position: absolute;
+}
