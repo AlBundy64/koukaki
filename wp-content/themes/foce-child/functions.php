@@ -8,6 +8,7 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 function theme_enqueue_scripts(){
     wp_enqueue_script( 'scripts', get_stylesheet_directory_uri() . '/script.js', array(), false, true );
     wp_enqueue_script( 'scripts-parallaxe','https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js');
+    wp_enqueue_script( 'scripts-carrousel','https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js');
 }
 
 // Get customizer options form parent theme

@@ -124,6 +124,11 @@ p {
 /****importe le fichier scss concernant la section finale****/
 @import "../templates-parts/section-festival/section-festival-style.scss";
 
+/****importe le fichier scss concernant le carrousel****/
+@import "../templates-parts/section-carrousel/carrousel.scss";
+
+
+
 /****vidéo dans le header****/
 .banner {
    @media (min-width: 699px) {
