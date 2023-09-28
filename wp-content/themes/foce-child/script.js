@@ -21,13 +21,12 @@ var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
-  loop: true,
-  slidesPerView: "auto",
-  spaceBetween:-10,
+  slidesPerView: 3,
+  spaceBetween: 100,
   coverflowEffect: {
-    rotate: 160,
+    rotate: 23,
     stretch: 0,
-    depth: 500,
+    depth: 700,
     modifier: 1,
     slideShadows: false,
   },
@@ -35,3 +34,6 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
   },
 });
+
+//script skrollR
+var s =skrollr.init();
