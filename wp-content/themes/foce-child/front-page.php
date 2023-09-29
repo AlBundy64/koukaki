@@ -37,9 +37,10 @@ get_header();
                 <div>
                     <h3>Le Lieu</h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
-                    <img src="<?php echo  get_stylesheet_directory_uri() . '/assets/images/big_cloud.png';?>" alt="Image d'un grand nuage" data-200-bottom-top="transform:translate3d(800px, -200px, 0)" data-top-bottom="transform:translate3d(1100px,-200px, 0)">
-                    <img src="<?php echo  get_stylesheet_directory_uri() . '/assets/images/little_cloud.png';?>" alt="Image d'un petit nuage" data-50-bottom-top="transform:translate3d(500px, -50px, 0)" data-top-bottom="transform:translate3d(800px,-50px, 0)">
+                    
                 </div>
+                <img src="<?php echo  get_stylesheet_directory_uri() . '/assets/images/big_cloud.png';?>" alt="Image d'un grand nuage" data--80-bottom-top="transform:translate3d(800px, 80px, 0)" data-top-bottom="transform:translate3d(1020px,80px, 0)">
+                <img src="<?php echo  get_stylesheet_directory_uri() . '/assets/images/little_cloud.png';?>" alt="Image d'un petit nuage" data--270-bottom-top="transform:translate3d(500px, 270px, 0)" data--190-top-bottom="transform:translate3d(800px,270px, 0)">
 
             </article>
         </section>

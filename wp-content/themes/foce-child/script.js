@@ -15,6 +15,10 @@ const observer = new IntersectionObserver(entries => {
   
   observer.observe(document.querySelector('#story-title'));
   observer.observe(document.querySelector('#studio-title'));
+  observer.observe(document.querySelector('#lien1'));
+  observer.observe(document.querySelector('#lien2'));
+  observer.observe(document.querySelector('#lien3'));
+  observer.observe(document.querySelector('#lien4'));
 
 //script carrousel
 var swiper = new Swiper(".mySwiper", {

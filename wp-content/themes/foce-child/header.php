@@ -35,16 +35,16 @@
                 <span class="line"></span>
             </button>
             <ul>
-                <div class=image1>
+                <div class="image1">
                     <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/image-logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants" >
                 </div>
                 <div class="liens">
-                    <li class="lien1"><a href="#story" >Histoire</a></li>
-                    <li class="lien2"><a href="#characters">Personnages</a></li>
-                    <li class="lien3"><a href="#place">Lieu</a></li>
-                    <li class="lien4"><a href="#studio">Studio Koukaki</a></li>
+                    <li id="lien1"><a class="div-animated" href="#story" >Histoire</a></li>
+                    <li id="lien2"><a class="div-animated" href="#characters">Personnages</a></li>
+                    <li id="lien3"><a class="div-animated" href="#place">Lieu</a></li>
+                    <li id="lien4"><a class="div-animated" href="#studio">Studio Koukaki</a></li>
                 </div>
-                <div class=image2>
+                <div class="image2">
                     <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/studio-koukaki.png'; ?> " alt="logo studio Koukaki Fleurs d'oranger & chats errants" >
                 </div>
                 <div class="cats-attachment">

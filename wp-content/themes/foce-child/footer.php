@@ -24,10 +24,6 @@
 <?php wp_footer(); ?>
 
 
-<script>
-    var s =skrollr.init();
-</script>
-
 
 </body>
 </html>

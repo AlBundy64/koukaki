@@ -80,18 +80,6 @@
     transform: translateY(0px);
   }
 }
-/****Animation flottement chats*****/
-@keyframes floating-cat {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(30px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
 /**** classes éléments animés****/
 /*** classes pour animations fade in***/
 .banner img {
@@ -102,6 +90,7 @@
 @media (max-width: 700px) {
   .banner img {
     animation: none;
+    position: initial;
   }
 }
 
@@ -133,7 +122,7 @@ p {
 
 /****classes animations titres****/
 .title-animated {
-  animation: title-fade-in 1000ms 150ms;
+  animation: title-fade-in 1000ms;
 }
 @media (max-width: 699px) {
   .title-animated {
@@ -281,7 +270,7 @@ p {
   left: 25em;
   top: 10em;
   z-index: -1;
-  animation: floating-cat 5s 1s ease-in-out infinite;
+  animation: floating 10s 1s ease-in-out infinite;
   background: url("./assets/images/cat1.png");
   width: 109px;
   height: 99px;
@@ -314,38 +303,6 @@ p {
 }
 .main-navigation ul .liens li:hover a {
   color: black;
-}
-.main-navigation ul .liens .lien1 {
-  animation: floating 10s 1s ease-in-out infinite;
-}
-@media (max-width: 700px) {
-  .main-navigation ul .liens .lien1 {
-    animation: none;
-  }
-}
-.main-navigation ul .liens .lien2 {
-  animation: floating 10s 1200ms ease-in-out infinite;
-}
-@media (max-width: 700px) {
-  .main-navigation ul .liens .lien2 {
-    animation: none;
-  }
-}
-.main-navigation ul .liens .lien3 {
-  animation: floating 10s 1400ms ease-in-out infinite;
-}
-@media (max-width: 700px) {
-  .main-navigation ul .liens .lien3 {
-    animation: none;
-  }
-}
-.main-navigation ul .liens .lien4 {
-  animation: floating 10s 1600ms ease-in-out infinite;
-}
-@media (max-width: 700px) {
-  .main-navigation ul .liens .lien4 {
-    animation: none;
-  }
 }
 .main-navigation ul .liens::before {
   content: "";
@@ -423,7 +380,7 @@ p {
   left: 5em;
   bottom: 10em;
   z-index: -1;
-  animation: floating-cat 5s 3s ease-in-out infinite;
+  animation: floating 10s 3s ease-in-out infinite;
   background: url("./assets/images/cat2.png");
   width: 106px;
   height: 96px;
@@ -441,7 +398,7 @@ p {
   right: 21em;
   top: 19em;
   z-index: -1;
-  animation: floating-cat 5s 2s ease-in-out infinite;
+  animation: floating 10s 2s ease-in-out infinite;
   background: url("./assets/images/cat3.png");
   width: 106px;
   height: 96px;
